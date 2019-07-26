@@ -1,0 +1,46 @@
+
+	   <!--Fixed Top Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.jsp"><img alt="Brand" src="img/logo.png" height="70"></a>
+     <a class="navbar-brand" href="index.jsp">Civil Registration</a>
+             </div>
+ <button type="button" class="navbar-toggle collapsed" data-target="#mainnavbar" data-toggle="collapse"  >
+       <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  <%
+    java.util.Date d=new java.util.Date();
+     %>
+    <p class=" navbar-text navbar-right"> <%=cname%> </p> 
+    <p class=" navbar-text navbar-right"><%=d%></p>
+        
+     
+       <div class="collapse navbar-collapse" id="mainnavbar">
+     <ul class="nav navbar-nav navbar-right">
+          <li><a href="AadharCard.jsp">AadharCard</a></li>
+        <li><a href="VoterCard.jsp">VoterCard</a></li>
+        <li><a href="Pancard.jsp">Pancard</a></li>
+        <li><a href="Passport.jsp">Passport</a></li>
+        <li><a href="DrivingLicence.jsp">Driving Licence</a></li>
+        
+            
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+ <img  src='GetPic?cid=<%=cid%>' alt="citizen-image" class="img-rounded" height="40" width="50"><span class="caret "></span>
+ </a>
+    <ul class="dropdown-menu">
+           <li><a href="CStore.jsp">View Profile</a></li>            
+           <li><a href="ChangePassword.jsp">Change Password</a></li>
+           <li><a href="Logout.jsp">Logout</a></li>
+          </ul>
+        </li>
+            
+         </ul>
+       </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><!--end navbar-->

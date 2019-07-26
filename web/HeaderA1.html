@@ -1,0 +1,37 @@
+
+    <!--Fixed Top Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="OfficialHomePage.jsp"><img alt="Brand" src="img/logo.png" height="70"></a>
+     <a class="navbar-brand" href="OfficialHomePage.jsp">Civil Registration</a>
+             </div>
+ <button type="button" class="navbar-toggle collapsed" data-target="#mainnavbar" data-toggle="collapse"  >
+       <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <p class=" navbar-text navbar-right"> <%=aname%> </p> 
+    <p class=" navbar-text navbar-right"><%=d%></p>
+        
+       <div class="collapse navbar-collapse" id="mainnavbar">
+     <ul class="nav navbar-nav navbar-right">
+            
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+ <img  src='GetPic?aid=<%=aid%>' alt="citizen-image" class="img-rounded" height="40" width="50"><span class="caret "></span>
+ </a>
+ <ul class="dropdown-menu">
+            <li><a href="AdminProfile.jsp">Profile</a></li>
+            <li><a href="AdminProfile.jsp">ChangePassword</a></li>
+           <li><a href="Logout.jsp">Logout</a></li>
+          </ul>
+        </li>
+            
+         </ul>
+       </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><!--end navbar-->
